@@ -1,0 +1,357 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'helvetica','arial', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+  }
+
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+main .main {
+        text-align: center;
+        padding-top: 150px;
+}
+
+header {
+      width: 100%;
+      background: black;
+      padding: 10px 20px;
+      position: fixed;
+}
+
+header ul li a:hover {
+  color: red;
+}
+
+header nav .menu .submenudiscos {
+  background: tomato;
+  padding: 10px;
+  margin: auto;
+  position: absolute;
+  display: none;
+}
+
+header nav .menu .submenudiscos li {
+  display: block;
+}
+
+header nav .menu li:hover .submenudiscos {
+  display: block;
+}
+
+header h1 {
+  display: inline-block;
+}
+
+header nav ul {
+  list-style: none;
+  margin-top: 8px;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  header nav ul li a {
+  text-transform: uppercase;
+  color: #fff;
+}
+header nav {
+  float: right;
+}
+body {
+      background-size: 100%;
+      background-image: url(https://f4.bcbits.com/img/0010286211_130.jpg);
+      background-attachment: fixed;
+    }
+
+
+
+#Banda {
+  width: 100vw;
+  height: 100vh;
+}
+
+#Banda p {
+  margin: 20px 20px;
+}
+
+section {
+      padding-top: 50px;
+      width: 100vw;
+      height: 100vh;
+}
+
+h1{
+  color: #fff;
+}
+
+h2{
+  background: #000;
+  color: #fff;
+  padding: 12px;
+}
+
+h3 {
+  padding: 20px;
+}
+
+
+
+.I{
+  width: 240px;
+  height: 240px;
+  margin-right: 30px;
+}
+.II{
+  width: 240px;
+  height: 240px;
+  margin-right: 30px;
+}
+
+.DiscoI {
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+
+}
+
+.DiscoII {
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+}
+
+#tunombre #aguetas {
+  background: rgb (60, 179, 113)
+}
+
+#Videos iframe{
+  width: 40%;
+  height: 40%;
+}
+
+
+footer {
+  clear: left;
+  background: #000;
+  padding: 20px;
+}
+
+footer h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+  }
+
+footer ul li a {
+  font-size: 20px;
+  color: #fff;
+}
+
+.circulodeflechita {
+  height: 6px;
+}
+
+.circulodeflechita div {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 20%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.circulodeflechita div i {
+  font-size: 1.7rem;
+  color: #000;
+  position: relative;
+  left: calc(50% - 0.75rem);
+  top: calc(50% - 0.85rem);
+}
+
+#Fotos ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns:20% 20% 20% 20%;
+  grid-template-rows: repeat(2, 200px);
+  grid-gap: 10px;
+  grid-template-areas: "c1 c1 c2 c3"
+							         "c4 c5 c6 c7";
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#Fotos ul li.uno{
+  	background: url('https://f4.bcbits.com/img/0010286149_10.jpg');
+    background-size:cover;
+    background-position: top;
+    grid-area: c1;
+}
+
+#Fotos ul li.dos{
+  	background: url('http://sostanbeatle.com/wp-content/uploads/2017/07/USTED.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-area: c2;
+
+}
+
+#Fotos ul li.tres{
+  	background: url('http://www.billboard.com.ar/images/galleries/4158/08dd389111bac0680ce1443aaf779d95_650x430.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-area: c3;
+
+}
+
+#Fotos ul li.cuatro{
+  	background: url('https://www.clapps.com.ar/wp-content/uploads/2018/08/5a4921216eb32.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-area: c4;
+}
+
+#Fotos ul li.cinco{
+  	background: url('http://planetacabezon.com/08-2018/20122015-DSC_9631.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-area: c5;
+}
+
+#Fotos ul li.seis{
+  	background: url('https://pbs.twimg.com/media/DPQHkzdXUAAGEkG.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-area: c6;
+}
+
+#Fotos ul li.siete{
+  	background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/a325f065963021.5b05ee8153005.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-area: c7;
+}
+
+
+@media screen and (max-width: 768px){
+	body {
+        background-size: cover;
+        background-image: url(https://f4.bcbits.com/img/0010286211_130.jpg);
+        background-attachment: fixed;
+        background-position: center;
+  	   }
+
+
+      .main{
+        padding: 0;
+        margin: 0;
+      }
+
+      iframe {
+        width: 100vw;
+      }
+
+      header nav ul li.inicionav{
+        display: none;
+      }
+
+      header nav ul li.bandanav{
+        display: none;
+      }
+      header nav ul li.videosnav{
+        display: none;
+      }
+      header nav ul li.fotosnav{
+        display: none;
+      }
+
+
+      #Fotos ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns:45% 45%;
+        grid-template-rows: repeat(7, 100px);
+        grid-gap: 10px;
+        grid-template-areas: "c1 c1"
+      							         "c2 c3"
+                             "c4 c5"
+                             "c6 c7";
+        justify-content: center;
+        margin-top: 50px;
+      }
+
+      #Fotos ul li.uno{
+        	background: url('https://f4.bcbits.com/img/0010286149_10.jpg');
+          background-size:cover;
+          background-position: top;
+          grid-area: c1;
+      }
+
+      #Fotos ul li.dos{
+        	background: url('http://sostanbeatle.com/wp-content/uploads/2017/07/USTED.jpg');
+          background-size: cover;
+          background-position: center;
+          grid-area: c2;
+
+      }
+
+      #Fotos ul li.tres{
+        	background: url('http://www.billboard.com.ar/images/galleries/4158/08dd389111bac0680ce1443aaf779d95_650x430.jpg');
+          background-size: cover;
+          background-position: center;
+          grid-area: c3;
+
+      }
+
+      #Fotos ul li.cuatro{
+        	background: url('https://www.clapps.com.ar/wp-content/uploads/2018/08/5a4921216eb32.jpg');
+          background-size: cover;
+          background-position: center;
+          grid-area: c4;
+      }
+
+      #Fotos ul li.cinco{
+        	background: url('http://planetacabezon.com/08-2018/20122015-DSC_9631.jpg');
+          background-size: cover;
+          background-position: center;
+          grid-area: c5;
+      }
+
+      #Fotos ul li.seis{
+        	background: url('https://pbs.twimg.com/media/DPQHkzdXUAAGEkG.jpg');
+          background-size: cover;
+          background-position: center;
+          grid-area: c6;
+      }
+
+      #Fotos ul li.siete{
+        	background: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/a325f065963021.5b05ee8153005.jpg');
+          background-size: cover;
+          background-position: center;
+          grid-area: c7;
+      }
+
+
+}
